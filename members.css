@@ -216,7 +216,7 @@
 /* V4.3 Violin members page */
 .instrument-hero{position:relative;min-height:66vh;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;padding:145px 22px 112px;background:#0c2a3d}
 .instrument-hero__bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(9,34,52,.84),rgba(243,154,31,.36)),url('assets/images/hero.jpg') center/cover no-repeat;transform:scale(1.02)}
-.instrument-hero--violin .instrument-hero__bg{background:linear-gradient(135deg,rgba(9,34,52,.82),rgba(243,154,31,.38)),url('assets/images/violin-members/02-3-ok.jpg') center 28%/cover no-repeat}
+.instrument-hero--violin .instrument-hero__bg{background:linear-gradient(135deg,rgba(9,34,52,.82),rgba(243,154,31,.38)),url('assets/images/hero.jpg') center center/cover no-repeat}
 .instrument-hero__content{position:relative;z-index:1;max-width:980px}
 .instrument-hero h1{font-family:'Noto Serif TC',serif;font-size:clamp(46px,7vw,88px);line-height:1.08;margin:12px 0 18px;text-shadow:0 18px 48px rgba(0,0,0,.24)}
 .instrument-hero p:not(.section-kicker){font-size:clamp(18px,2.2vw,24px);color:rgba(255,255,255,.92);margin:0 auto;max-width:820px}
@@ -241,3 +241,57 @@
 @media(max-width:1100px){.instrument-member-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:900px){.instrument-intro__grid{grid-template-columns:1fr}.instrument-member-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.instrument-hero{min-height:56vh;padding-top:124px}.instrument-member-grid{grid-template-columns:1fr}.instrument-member-card__photo img{aspect-ratio:1/1}.instrument-note{text-align:center}}
+/* V4.8 faculty category cards */
+.faculty-category-card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.faculty-category-card{
+  display:grid;
+  gap:10px;
+  min-height:190px;
+  padding:28px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#fff,#fff9ef);
+  border:1px solid rgba(243,154,31,.22);
+  box-shadow:0 18px 52px rgba(15,23,42,.09);
+  transition:.25s;
+  color:var(--navy);
+}
+.faculty-category-card:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow);
+}
+.faculty-category-card span{
+  color:var(--orange);
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-size:13px;
+}
+.faculty-category-card strong{
+  font-family:'Noto Serif TC',serif;
+  font-size:clamp(26px,3.4vw,38px);
+  line-height:1.2;
+}
+.faculty-category-card em{
+  font-style:normal;
+  color:var(--muted);
+  font-weight:800;
+}
+@media(max-width:900px){
+  .faculty-category-card-grid{grid-template-columns:1fr}
+}
+
+/* V5.0 faculty switch buttons */
+.faculty-category-nav--switch{
+  margin:-10px auto 34px;
+}
+.faculty-category-nav--switch a.is-active{
+  background:linear-gradient(135deg,var(--orange),#ffbe4f);
+  color:#1a1204;
+  border-color:rgba(243,154,31,.42);
+  box-shadow:0 14px 34px rgba(243,154,31,.22);
+}
+
