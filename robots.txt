@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://fsotaiwan.fantasy-fso-sym.workers.dev/sitemap.xml
