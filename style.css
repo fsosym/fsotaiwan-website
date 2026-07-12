@@ -704,3 +704,67 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container
     font-size:16px;
   }
 }
+
+/* V6.1 music competition page */
+.competition-hero{
+  background:url('assets/images/hero.jpg') center 46%/cover no-repeat;
+}
+.competition-section{
+  background:
+    radial-gradient(circle at 8% 12%, rgba(247,148,29,.10), transparent 26%),
+    radial-gradient(circle at 92% 82%, rgba(77,191,215,.12), transparent 24%),
+    linear-gradient(180deg,var(--cream-2),#fff 72%);
+}
+.competition-layout{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:clamp(28px,5vw,64px);
+  align-items:center;
+}
+.competition-copy{
+  padding:clamp(28px,4vw,54px);
+  border-radius:34px;
+  background:rgba(255,255,255,.90);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.competition-copy h2{
+  margin:0;
+}
+.competition-copy p{
+  color:#4f5663;
+  line-height:1.9;
+}
+.competition-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:26px;
+}
+.competition-photo{
+  margin:0;
+  overflow:hidden;
+  border-radius:34px;
+  background:#fff;
+  border:10px solid #fff;
+  box-shadow:var(--shadow);
+}
+.competition-photo img{
+  width:100%;
+  min-height:420px;
+  object-fit:cover;
+}
+.competition-photo figcaption{
+  padding:16px 18px;
+  color:var(--navy);
+  font-weight:900;
+  text-align:center;
+}
+@media (max-width:840px){
+  .competition-layout{
+    grid-template-columns:1fr;
+  }
+  .competition-photo img{
+    min-height:260px;
+  }
+}
