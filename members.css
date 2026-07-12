@@ -295,3 +295,12 @@
   box-shadow:0 14px 34px rgba(243,154,31,.22);
 }
 
+
+/* V5.3 conductor profile cards */
+.conductors-grid a.conductor-card{
+  color:inherit;
+  text-decoration:none;
+}
+.conductor-profile-hero .profile-hero__bg{
+  background:linear-gradient(135deg,rgba(9,34,52,.86),rgba(243,154,31,.38)),url('assets/images/hero.jpg') center/cover no-repeat;
+}
