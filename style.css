@@ -621,3 +621,27 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container
     padding:130px 20px 76px;
   }
 }
+
+/* V5.6 latest announcements from old site */
+.news-feature--poster{
+  background-position:center;
+}
+.news-list--announcements{
+  max-height:640px;
+  overflow:auto;
+  padding-right:6px;
+}
+.news-list--announcements::-webkit-scrollbar{
+  width:8px;
+}
+.news-list--announcements::-webkit-scrollbar-thumb{
+  background:rgba(247,148,29,.32);
+  border-radius:999px;
+}
+@media (max-width:840px){
+  .news-list--announcements{
+    max-height:none;
+    overflow:visible;
+    padding-right:0;
+  }
+}
